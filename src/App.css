@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  color: #121212;
+  background: #f3f4f8;
+  font-family: sans-serif;
+}
+
+a {
+  color: #8f8f8f;
+  text-decoration: none;
+}
+
+a.active {
+  color: #121212;
+}
