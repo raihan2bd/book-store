@@ -10,3 +10,12 @@ body {
   background: #f3f4f8;
   font-family: sans-serif;
 }
+
+a {
+  color: #8f8f8f;
+  text-decoration: none;
+}
+
+a.active {
+  color: #121212;
+}
