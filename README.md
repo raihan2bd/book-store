@@ -2,14 +2,14 @@
 
 <div align="center">
 
-  <h1><b>Math Magicians</b></h1>
+  <h1><b>BOOK STORE</b></h1>
 
 </div>
 
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [ 💻 Math Magicians ](#-math-magicians-)
+- [ 💻 Book Store ](#-book-store-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -26,9 +26,9 @@
   - [🙏 Acknowledgments ](#-acknowledgments-)
   - [📝 License ](#-license-)
 
-# 💻 Math Magicians <a name="about-project"></a>
+# 💻 Book Store <a name="about-project"></a>
 
-> **Math Magicians** is a Microverce React project. It is a website for all fans of mathematics. Using this website user can make simple calculations and also can read a random math-related quote.
+> **Book Store** is a Microverce React MVP project. Using this project user can read a book. User can see a book list. User can update a book. And also User can delete book from the book list.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -50,8 +50,8 @@
 > Some key feature of this project
 > Features
 
-- **User can calculate simple math equations**
-- **User can read random math quotes**
+- **User can read book**
+- **User can make CRUD operation with the book list**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -78,7 +78,7 @@
 > Clone this repository to your desired folder: cd [folder] to navigate and run the below comand to clone the project
 
 ```sh
-git clone https://github.com/raihan2bd/math-magicians.git
+git clone https://github.com/raihan2bd/book-store.git
 ```
 
 ### Install
@@ -113,15 +113,9 @@ npm start
 npm run build
 ```
 
-> To test this project make sure you download all the packages using `npm install`. After downloading the packages you have to navigate project directory on your terminal then enter the below command start testing:
-
-```sh
-npm test
-```
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Author <a name="authors"></a>
 
 👤 **Abu Raihan**
 
@@ -129,18 +123,12 @@ npm test
 - Twitter: [@twitterhandle](https://twitter.com/raihan2bd)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/raihan2bd)
 
-👤 **Michael Amponsah**
-
-- GitHub: [@michaelamponsah](https://github.com/michaelamponsah)
-- Twitter: [@\_mikeamponsah](https://twitter.com/_mikeamponsah)
-- LinkedIn: [michaelamponsah](https://linkedin.com/in/mikeamponsah)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **I will add math calculation functionality**
-- [ ] **I will add random math quotes**
+- [ ] **I will add api call to make CRUD operation with book list**
+- [ ] **I will develop Categories Page**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
