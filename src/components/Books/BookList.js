@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import Book from './Book';
 
-const BookList = ({ books }) => (
+const BookList = ({ books, onRemoveBook }) => (
   <ul>
     {books.map((book) => (
       <Book
@@ -12,13 +12,22 @@ const BookList = ({ books }) => (
         title={book.title}
         author={book.author}
         category={book.category}
+        onRemoveBookHandler={onRemoveBook}
       />
     ))}
   </ul>
 );
 
 BookList.propTypes = {
-  books: PropTypes.arrayOf.isRequired,
+  books: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      title: PropTypes.string,
+      author: PropTypes.string,
+      category: PropTypes.string,
+    }),
+  ).isRequired,
+  onRemoveBook: PropTypes.func.isRequired,
 };
 
 export default BookList;
