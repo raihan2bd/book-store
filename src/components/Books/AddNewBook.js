@@ -19,7 +19,7 @@ const AddNewBook = () => {
   const titleChangeHandler = (event) => {
     const bookTitle = event.target.value;
     setTitle(bookTitle);
-    if (bookTitle.length < 3 || bookTitle.length > 55) {
+    if (bookTitle.trim().length < 3 || bookTitle.trim().length > 55) {
       setIsTitleValid(false);
     } else {
       setIsTitleValid(true);
@@ -29,7 +29,7 @@ const AddNewBook = () => {
   const authorChangeHandler = (event) => {
     const bookTitle = event.target.value;
     setAuthor(bookTitle);
-    if (bookTitle.length < 3 || bookTitle.length > 25) {
+    if (bookTitle.trim().length < 3 || bookTitle.trim().length > 25) {
       setIsAuthorValid(false);
     } else {
       setIsAuthorValid(true);
@@ -41,7 +41,11 @@ const AddNewBook = () => {
     if (isFormValid) {
       // call the book reducer action to add book
       dispatch(
-        ADD_BOOK({ title, author, category: categoryRef.current.value }),
+        ADD_BOOK({
+          title: title.trim(),
+          author: author.trim(),
+          category: categoryRef.current.value.trim(),
+        }),
       );
 
       // clear inputs field
@@ -52,7 +56,12 @@ const AddNewBook = () => {
   };
 
   useEffect(() => {
-    if (isTitleValid && isAuthorValid && title.length !== 0 && author !== 0) {
+    if (
+      isTitleValid
+      && isAuthorValid
+      && title.trim().length !== 0
+      && author.trim().length !== 0
+    ) {
       setIsFormValid(true);
     } else {
       setIsFormValid(false);
