@@ -40,7 +40,7 @@ const booksReducer = createReducer(initialState, (builder) => {
 
   builder.addCase(REMOVE_BOOK, (state, action) => {
     const updatedBooks = [...state.books].filter(
-      (book) => book.id !== action.payload
+      (book) => book.id !== action.payload,
     );
     return { ...state, books: updatedBooks };
   });
