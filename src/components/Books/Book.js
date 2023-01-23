@@ -8,12 +8,18 @@ const Book = ({
 }) => (
   <li>
     <Card id={id}>
-      <h4>{category}</h4>
-      <h3>{title}</h3>
-      <p>{author}</p>
-      <button type="button" onClick={onRemoveBookHandler}>
-        Remove
-      </button>
+      <div>
+        <h4>{category}</h4>
+        <h3>{title}</h3>
+        <p>{author}</p>
+        <button type="button" onClick={onRemoveBookHandler}>
+          Remove
+        </button>
+      </div>
+      <div>Progress 80%</div>
+      <div>
+        <button type="button">Update Progress</button>
+      </div>
     </Card>
   </li>
 );

@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { FaUser } from 'react-icons/fa';
 
 const Header = () => (
   <header>
@@ -15,7 +16,11 @@ const Header = () => (
           <NavLink to="/categories">CATEGORIES</NavLink>
         </li>
       </ul>
-      <div>User Action</div>
+      <div>
+        <button type="button">
+          <FaUser />
+        </button>
+      </div>
     </nav>
   </header>
 );
