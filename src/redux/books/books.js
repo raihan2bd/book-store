@@ -18,7 +18,7 @@ const initialState = {
       category: 'Science Fiction',
     },
     {
-      id: '4',
+      id: '3',
       title: 'Capital in the Twenty-First Century',
       author: 'Suzanne Collins',
       category: 'Economy',
@@ -32,7 +32,7 @@ const booksReducer = createReducer(initialState, (builder) => {
       ...state,
       books: [
         ...state.books,
-        { ...action.payload, id: state.books.length + 1 },
+        { ...action.payload, id: `${state.books.length + 1}` },
       ],
     };
     return updatedState;
@@ -41,7 +41,7 @@ const booksReducer = createReducer(initialState, (builder) => {
   builder.addCase(REMOVE_BOOK, (state, action) => {
     const updatedState = [...state];
     const filterState = updatedState.books.filter(
-      (book) => book.id !== action.payload,
+      (book) => book.id !== action.payload
     );
     return filterState;
   });
