@@ -1,6 +1,6 @@
 import React from 'react';
-import AddNewBook from '../components/Books/AddNewBook';
 
+import AddNewBook from '../components/Books/AddNewBook';
 import BookList from '../components/Books/BookList';
 import Card from '../components/UI/Card';
 
@@ -26,9 +26,7 @@ const DUMMY_BOOKS = [
 ];
 
 const HomePage = () => {
-  const removeBookHandler = () => {
-    console.log('Removed');
-  };
+  const removeBookHandler = () => {};
   return (
     <section>
       <Card>
