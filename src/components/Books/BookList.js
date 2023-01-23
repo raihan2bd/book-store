@@ -1,5 +1,4 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
 import { useSelector } from 'react-redux';
 
 import Book from './Book';
@@ -20,17 +19,5 @@ const BookList = () => {
     </ul>
   );
 };
-
-// BookList.propTypes = {
-//   books: PropTypes.arrayOf(
-//     PropTypes.shape({
-//       id: PropTypes.string,
-//       title: PropTypes.string,
-//       author: PropTypes.string,
-//       category: PropTypes.string,
-//     })
-//   ).isRequired,
-//   onRemoveBook: PropTypes.func.isRequired,
-// };
 
 export default BookList;
