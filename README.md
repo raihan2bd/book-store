@@ -34,14 +34,16 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> I used React, Javascript and css to build this project.
+> I used React, Redux, Javascript and css to build this project.
 
 <details>
   <summary>Client</summary>
   <ul>
     <li>React</li>
-    <li>CSS</li>
+    <li>Redux</li>
     <li>JAVASCRIPT</li>
+    <li>Html</li>
+    <li>CSS</li>
   </ul>
 </details>
 

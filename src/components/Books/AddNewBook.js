@@ -12,6 +12,13 @@ const AddNewBook = () => (
         <input type="text" placeholder="Author" />
       </div>
       <div>
+        <select>
+          <option value="Action">Action</option>
+          <option value="Science Fiction">Science Fiction</option>
+          <option value="Economy">Economy</option>
+        </select>
+      </div>
+      <div>
         <button type="button">Add Book</button>
       </div>
     </form>
