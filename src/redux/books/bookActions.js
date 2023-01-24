@@ -1,5 +1,5 @@
 /* eslint consistent-return: "error" */
-import { createAction, createAsyncThunk } from '@reduxjs/toolkit';
+import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 import { v4 as uuidv4 } from 'uuid';
 
@@ -67,4 +67,22 @@ export const postANewBook = createAsyncThunk(
   },
 );
 
-export const removeBook = createAction('book/remove');
+export const removeBook = createAsyncThunk(
+  'book/remove',
+  async (id, thunkAPI) => {
+    try {
+      thunkAPI.dispatch(uiActions.pendingModal());
+      const response = await axios.delete(`/${id}`);
+      if (response.status !== 201) {
+        throw Error('Failed to delete the book!!');
+      }
+      thunkAPI.dispatch(uiActions.successModal(response.data));
+      return id;
+    } catch (err) {
+      thunkAPI.dispatch(
+        uiActions.rejectModal(err.message || 'Failed to delete the book!!'),
+      );
+    }
+    return null;
+  },
+);

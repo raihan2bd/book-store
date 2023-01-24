@@ -23,6 +23,7 @@ const BookList = () => {
           category={book.category}
         />
       ))}
+      {books.length === 0 && <p>No Book Found! Please Add New One!</p>}
     </ul>
   );
 };

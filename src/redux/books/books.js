@@ -3,40 +3,10 @@ import { createReducer } from '@reduxjs/toolkit';
 import { fetchBooks, postANewBook, removeBook } from './bookActions';
 
 const initialState = {
-  books: [
-    // {
-    //   id: '1',
-    //   title: 'The Hunger Games',
-    //   author: 'Suzanne Collins',
-    //   category: 'Action',
-    // },
-    // {
-    //   id: '2',
-    //   title: 'Dune',
-    //   author: 'Frank Herbert',
-    //   category: 'Science Fiction',
-    // },
-    // {
-    //   id: '3',
-    //   title: 'Capital in the Twenty-First Century',
-    //   author: 'Suzanne Collins',
-    //   category: 'Economy',
-    // },
-  ],
+  books: [],
 };
 
 const booksReducer = createReducer(initialState, (builder) => {
-  // builder.addCase(addBook, (state, action) => {
-  //   const updatedState = {
-  //     ...state,
-  //     books: [
-  //       ...state.books,
-  //       { ...action.payload, id: `${state.books.length + 1}` },
-  //     ],
-  //   };
-  //   return updatedState;
-  // });
-
   builder.addCase(fetchBooks.fulfilled, (state, action) => {
     const updatedState = {
       ...state,
@@ -45,7 +15,7 @@ const booksReducer = createReducer(initialState, (builder) => {
     return updatedState;
   });
 
-  builder.addCase(removeBook, (state, action) => {
+  builder.addCase(removeBook.fulfilled, (state, action) => {
     const updatedBooks = [...state.books].filter(
       (book) => book.id !== action.payload,
     );
