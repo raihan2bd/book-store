@@ -25,7 +25,7 @@ const Modal = ({ onClick, children }) => (
 );
 
 Modal.propTypes = {
-  onClick: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
   children: PropTypes.node.isRequired,
 };
 
