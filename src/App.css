@@ -14,10 +14,15 @@ body {
 a {
   color: #8f8f8f;
   text-decoration: none;
+  cursor: pointer;
 }
 
 a.active {
   color: #121212;
+}
+
+button {
+  cursor: pointer;
 }
 
 .modal_message {

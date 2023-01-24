@@ -1,0 +1,121 @@
+.book {
+  display: flex;
+  padding: 1.5rem;
+  color: #121212;
+  background: #fff;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.book_content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #121212;
+}
+
+.book_content h4 {
+  padding: 0 10px;
+  font-size: 1rem;
+  opacity: 0.5;
+}
+
+.book_content h3 {
+  padding: 0 10px;
+}
+
+.book_content p {
+  padding: 0 10px;
+  color: #4386bf;
+  font-size: 0.875rem;
+}
+
+.book_actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.book_actions button {
+  color: #121212;
+  background: transparent;
+  border: none;
+  padding: 5px 10px;
+  opacity: 0.6;
+}
+
+.book_actions button:nth-child(1) {
+  border-right: 1px solid #8f8f8f;
+}
+
+.book_actions button:nth-child(3) {
+  border-left: 1px solid #8f8f8f;
+}
+
+.book_actions button:hover {
+  opacity: 1;
+}
+
+.book_progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book_percentage {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.book_percentage h2 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.book_percentage h2 span {
+  font-size: 1.5rem;
+  margin-left: 5px;
+}
+
+.book_percentage p {
+  font-size: 1rem;
+  opacity: 0.6;
+}
+
+.update_progress {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: #121212;
+  justify-content: space-between;
+  position: relative;
+}
+
+.update_progress::before {
+  left: -25%;
+  position: absolute;
+  content: '';
+  width: 3px;
+  height: 100%;
+  align-self: center;
+  justify-self: center;
+  margin: auto 0;
+  background: #e8e8e8;
+}
+
+.update_progress p {
+  font-size: 0.95rem;
+  opacity: 0.6;
+}
+
+.update_progress button {
+  padding: 10px 24px;
+  background: #0290ff;
+  border: none;
+  color: #fff;
+  font-size: 1.1rem;
+  border-radius: 3px;
+  letter-spacing: 0.5px;
+}
