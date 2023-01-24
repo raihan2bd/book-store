@@ -19,3 +19,41 @@ a {
 a.active {
   color: #121212;
 }
+
+.modal_message {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.modal_message h3 {
+  padding: 1rem 10px;
+  background: #0290ff;
+  color: #fff;
+}
+
+.modal_message p {
+  padding: 1rem;
+}
+
+.action-success {
+  color: #20d16f;
+}
+
+.action-error {
+  color: #b7351e;
+}
+
+.btn_close_modal {
+  align-self: flex-end;
+  width: max-content;
+  padding: 10px 15px;
+  background: red;
+  color: #fff;
+  margin: 15px;
+  border: none;
+}
+
+.btn_close_modal:hover {
+  background: #da4025;
+}
