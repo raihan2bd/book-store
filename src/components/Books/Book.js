@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 
-import { removeBook, fetchBooks } from '../../redux/books/bookActions';
+import { removeBook, fetchBooks } from '../../redux/books/books';
 import Card from '../UI/Card';
 
 const Book = ({

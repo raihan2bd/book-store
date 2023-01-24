@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useDispatch } from 'react-redux';
 
-import { postANewBook } from '../../redux/books/bookActions';
+import { postANewBook } from '../../redux/books/books';
 import Card from '../UI/Card';
 
 const AddNewBook = () => {

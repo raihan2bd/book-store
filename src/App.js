@@ -7,8 +7,8 @@ import Layout from './components/UI/Layout';
 import Modal from './components/UI/Modal';
 import HomePage from './pages/HomePage';
 import CategoriesPage from './pages/CategoriesPage';
-import './App.css';
 import Spinner from './components/UI/Spinner';
+import './App.css';
 
 const App = () => {
   const {
