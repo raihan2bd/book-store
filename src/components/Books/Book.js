@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 
-import { REMOVE_BOOK } from '../../redux/books/books';
+import { removeBook, fetchBooks } from '../../redux/books/bookActions';
 import Card from '../UI/Card';
 
 const Book = ({
@@ -11,7 +11,7 @@ const Book = ({
   const dispatch = useDispatch();
 
   const removeBookHandler = () => {
-    dispatch(REMOVE_BOOK(id));
+    dispatch(removeBook(id));
   };
 
   return (
@@ -27,7 +27,9 @@ const Book = ({
         </div>
         <div>Progress 80%</div>
         <div>
-          <button type="button">Update Progress</button>
+          <button type="button" onClick={() => dispatch(fetchBooks())}>
+            Update Progress
+          </button>
         </div>
       </Card>
     </li>

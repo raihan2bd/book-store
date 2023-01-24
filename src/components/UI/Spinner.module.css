@@ -17,13 +17,14 @@
   box-sizing: border-box;
   animation: rotation 1s linear infinite;
   margin: auto;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
   }
 
-  @keyframes rotation {
-  0% {
-      transform: rotate(0deg);
-  }
   100% {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }

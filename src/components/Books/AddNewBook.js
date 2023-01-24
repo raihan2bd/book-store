@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useDispatch } from 'react-redux';
 
-import { ADD_BOOK } from '../../redux/books/books';
+import { postANewBook } from '../../redux/books/bookActions';
 import Card from '../UI/Card';
 
 const AddNewBook = () => {
@@ -39,14 +39,14 @@ const AddNewBook = () => {
   const addBookHandler = (event) => {
     event.preventDefault();
     if (isFormValid) {
-      // call the book reducer action to add book
       dispatch(
-        ADD_BOOK({
+        postANewBook({
           title: title.trim(),
           author: author.trim(),
           category: categoryRef.current.value.trim(),
         }),
       );
+      // call the book reducer action to add book
 
       // clear inputs field
       setIsFormValid(false);
