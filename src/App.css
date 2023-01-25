@@ -4,6 +4,8 @@
   padding: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+
 html,
 body {
   color: #121212;
@@ -14,10 +16,24 @@ body {
 a {
   color: #8f8f8f;
   text-decoration: none;
+  cursor: pointer;
 }
 
 a.active {
   color: #121212;
+}
+
+button {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:active {
+  transform: translateY(-2px);
+}
+
+#root {
+  padding: 4%;
 }
 
 .modal_message {

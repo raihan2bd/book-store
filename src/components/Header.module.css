@@ -1,0 +1,43 @@
+.header {
+  padding: 1rem 3%;
+  background: #fff;
+  min-height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav_brand h1 {
+  color: #0290ff;
+  font-size: 1.875rem;
+  margin-right: 15px;
+}
+
+.nav_items {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.user_action {
+  margin-left: auto;
+}
+
+.user_action button {
+  background: transparent;
+  padding: 10px 12px;
+  border-radius: 50%;
+  border: 1px solid #0290ff;
+  color: #0290ff;
+}
+
+.user_action button:hover {
+  border-color: #044374;
+  color: #044374;
+}

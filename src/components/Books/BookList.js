@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
 import { fetchBooks } from '../../redux/books/books';
-
 import Book from './Book';
+import classes from './BookList.module.css';
 
 const BookList = () => {
   const books = useSelector((state) => state.books.books);
@@ -13,7 +13,7 @@ const BookList = () => {
     dispatch(fetchBooks());
   }, [dispatch]);
   return (
-    <ul>
+    <ul className={classes.books}>
       {books.map((book) => (
         <Book
           key={book.id}
