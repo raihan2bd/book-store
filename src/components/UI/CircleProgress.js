@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './CircelProgress.css';
 
 const CircelProgress = ({ percentage }) => {
-  const calcValue = 263 - (263 * percentage) / 100;
+  const calcValue = 220 - (220 * percentage) / 100;
   return (
     <div className="box">
       <div className="circle">

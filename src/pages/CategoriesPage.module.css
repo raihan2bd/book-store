@@ -6,6 +6,7 @@
   min-height: 50vh;
   flex-direction: column;
   gap: 2rem;
+  font-family: 'Roboto Slab', serif;
 }
 
 .container button {
