@@ -39,6 +39,7 @@ select {
   border: none;
   background: #0290ff;
   font-size: 1.1rem;
+  border-radius: 3px;
 }
 
 .input_invalid input {

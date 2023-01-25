@@ -4,6 +4,8 @@
   padding: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+
 html,
 body {
   color: #121212;
