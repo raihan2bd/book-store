@@ -25,6 +25,11 @@ a.active {
 
 button {
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:active {
+  transform: translateY(-2px);
 }
 
 #root {

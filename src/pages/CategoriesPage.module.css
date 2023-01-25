@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  padding: 3%;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.container button {
+  padding: 15px 24px;
+  background: #0290ff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 1rem;
+}
+
+.container button:hover {
+  background: #046bb9;
+}
