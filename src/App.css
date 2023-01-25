@@ -25,6 +25,10 @@ button {
   cursor: pointer;
 }
 
+#root {
+  padding: 4%;
+}
+
 .modal_message {
   display: flex;
   flex-direction: column;

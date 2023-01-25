@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux';
 
 import { postANewBook } from '../../redux/books/books';
 import Card from '../UI/Card';
+import classes from './AddNewBook.module.css';
 
 const AddNewBook = () => {
   // state
@@ -69,11 +70,14 @@ const AddNewBook = () => {
   }, [isTitleValid, isAuthorValid, title, author]);
 
   return (
-    <Card>
-      <h3>Add New Book</h3>
-      <form onSubmit={addBookHandler}>
-        <div className={!isTitleValid ? 'invalid' : ''}>
-          <p>{!isTitleValid && 'Book title should be 3 to 55 char long!'}</p>
+    <Card extraclass={classes.form_container}>
+      <h2>Add New Book</h2>
+      <form onSubmit={addBookHandler} className={classes.form}>
+        <div
+          className={`${classes.form_control} ${
+            !isTitleValid ? classes.input_invalid : ''
+          }`}
+        >
           <input
             id="title"
             type="text"
@@ -81,26 +85,31 @@ const AddNewBook = () => {
             value={title}
             onChange={titleChangeHandler}
           />
+          <p>{!isTitleValid && 'Book title should be 3 to 55 char long!'}</p>
         </div>
-        <div className={!isAuthorValid ? 'invalid' : ''}>
-          <p>
-            {!isAuthorValid && 'Book author name should be 3 to 25 char long!'}
-          </p>
+        <div
+          className={`${classes.form_control} ${
+            !isAuthorValid ? classes.input_invalid : ''
+          }`}
+        >
           <input
             type="text"
             placeholder="Author"
             value={author}
             onChange={authorChangeHandler}
           />
+          <p>
+            {!isAuthorValid && 'Book author name should be 3 to 25 char long!'}
+          </p>
         </div>
-        <div>
+        <div className={classes.form_control}>
           <select ref={categoryRef}>
             <option value="Action">Action</option>
             <option value="Science Fiction">Science Fiction</option>
             <option value="Economy">Economy</option>
           </select>
         </div>
-        <div>
+        <div className={classes.form_action}>
           <button type="submit">Add Book</button>
         </div>
       </form>

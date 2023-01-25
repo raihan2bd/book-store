@@ -1,0 +1,53 @@
+.form_container {
+  padding: 3%;
+  margin-top: 25px;
+}
+
+.form_container h2 {
+  margin-bottom: 20px;
+  color: #888;
+}
+
+.form {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.form_control {
+  flex: 1;
+}
+
+.input_invalid p {
+  color: red;
+  padding: 10px;
+}
+
+.form_control input,
+select {
+  width: 100%;
+  padding: 15px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  outline-color: #0290ff;
+}
+
+.form_action button {
+  padding: 15px 24px;
+  color: #fff;
+  border: none;
+  background: #0290ff;
+  font-size: 1.1rem;
+}
+
+.input_invalid input {
+  border-color: red;
+  color: red;
+  outline-color: red;
+}
+
+.form_control select * {
+  font-size: 1rem;
+  border-bottom: 1px solid #e8e8e8;
+}

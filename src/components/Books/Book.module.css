@@ -45,12 +45,14 @@
   opacity: 0.6;
 }
 
-.book_actions button:nth-child(1) {
-  border-right: 1px solid #8f8f8f;
-}
-
-.book_actions button:nth-child(3) {
-  border-left: 1px solid #8f8f8f;
+.update_progress button {
+  padding: 10px 24px;
+  background: #0290ff;
+  border: none;
+  color: #fff;
+  font-size: 1.1rem;
+  border-radius: 3px;
+  letter-spacing: 0.5px;
 }
 
 .book_actions button:hover {
@@ -110,12 +112,10 @@
   opacity: 0.6;
 }
 
-.update_progress button {
-  padding: 10px 24px;
-  background: #0290ff;
-  border: none;
-  color: #fff;
-  font-size: 1.1rem;
-  border-radius: 3px;
-  letter-spacing: 0.5px;
+.book_actions button:nth-child(1) {
+  border-right: 1px solid #8f8f8f;
+}
+
+.book_actions button:nth-child(3) {
+  border-left: 1px solid #8f8f8f;
 }

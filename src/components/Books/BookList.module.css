@@ -1,0 +1,7 @@
+.books {
+  list-style: none;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.938rem;
+}
