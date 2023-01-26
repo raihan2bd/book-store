@@ -60,8 +60,9 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 > ## Project demo
->
-> Site is under construction and the Project Demo will update soon.
+>![bookstore](https://user-images.githubusercontent.com/35267447/214837157-45734f12-5466-4238-9e15-d4b68eb66c9b.png)
+
+> 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
